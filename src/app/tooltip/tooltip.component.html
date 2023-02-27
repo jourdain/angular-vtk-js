@@ -1,0 +1,3 @@
+<div *ngFor="let coord of xy | async"  [ngStyle]="{'position': 'absolute', 'left': coord.x + 'px', 'top': coord.y + 'px', 'background': 'white' }">
+  {{ coord.i }}
+</div>

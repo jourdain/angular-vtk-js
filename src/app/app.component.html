@@ -1,0 +1,11 @@
+<button (click)="toggleView()">Toggle view</button>
+<button (click)="resetCamera()">Reset Camera</button>
+<button (click)="addCone()">+ Cone</button>
+<button (click)="addSphere()">+ Sphere</button>
+<button (click)="removeLastItem()">Delete last item</button>
+<button (click)="monitorPoints()">Monitor</button>
+
+<div style="display: block; width: 80%; height: 450px; margin: 0 auto; position: relative; overflow: hidden;">
+  <app-vtk-view *ngIf="hasVtkView" />
+  <app-tooltip />
+</div>
